@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cour_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <xmp>
+        
+var a;
+var op;
+function un ()
+{
+    ch=document.getElementById("ecran").value;
+    ch=ch+"1";
+    document.getElementById("ecran").value=ch;
+
+}
+function deux ()
+{
+    document.getElementById("ecran").value=document.getElementById("ecran").value+"2";
+}
+function plus()
+{
+    a=Number(document.getElementById("ecran").value);
+    document.getElementById("ecran").value="+";
+    op="+";
+}
+function moins()
+{
+    a=Number(document.getElementById("ecran").value);
+    document.getElementById("ecran").value="-";
+    op="-";
+}
+function egale()
+{
+    let b=Number(document.getElementById("ecran").value);
+    if(op=="+")
+    {
+        res=a+b;
+    }else
+    {
+        if(op=="-")
+        {
+            res=a-b;
+        }
+    }
+    document.getElementById("ecran").value=res.toString();
+
+}
+    </xmp>
+</body>
+</html>

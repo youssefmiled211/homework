@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cour_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <xmp>
+        
+function est_texte(ch)
+{
+ch=ch.toUpperCase();
+valid=true;
+i=0;
+while( (i<ch.length) && (valid==true) )
+{
+if( ((ch.charAt(i)>"Z" ) || (ch.charAt(i)<"A") ) &&(ch.charAt(i)!=" ") )
+{
+valid=false;
+}
+i++;
+
+}
+return (valid);
+}
+function verif()
+{
+nom=document.getElementById("nom").value;
+prenom=document.getElementById("prenom").value;
+if( (est_texte(nom)==false)||(est_texte(prenom)==false))
+{
+alert("verifier le nom et le prenom");
+}
+
+}
+    </xmp>
+</body>
+</html>

@@ -1,0 +1,60 @@
+function ajout()
+{
+    np=document.getElementById("znp").value;
+    pos=np.indexOf(" ");
+    //ch.substr(pos,nb_caracteres); retourne nb_caracteres de la chaine ch à partir de la position pos
+    nom=np.substr(0,pos);
+    prenom=np.substr(pos+1,np.length);
+    np=prenom+" "+nom;
+    email=document.getElementById("zadr").value;
+    var taille = document.getElementById("carnet").options.length;
+    var exist = false;
+
+    if (taille != 0)
+    {
+        i=0;
+        while((i<taille)&&(exist==false))
+        {
+            elt= document.getElementById("carnet").options[i].text;
+   
+            if (elt == np)
+            {
+                exist = true;
+                alert("contact déjà existant");
+            }
+            i++;
+
+        }
+    }
+    if (!exist)
+    {
+        nelt= new Option(np, email);
+        document.getElementById("carnet").options[taille] = nelt;
+    }
+}
+//*****************************************
+function supprimer()
+{
+    var sel=document.getElementById("carnet").selectedIndex;
+    if (sel == -1)
+        alert("veuillez sélectionner un élément SVP");
+    else
+    {
+        document.getElementById("carnet").options[sel] = null;
+    }
+}
+//*****************************************
+function adresse()
+{
+   
+    var sel=document.getElementById("carnet").selectedIndex;
+    if (sel == -1)
+        alert("veuillez sélectionner un élément SVP ");
+    else
+    {
+       
+        nom=document.getElementById("carnet").options[sel].text;
+        email=document.getElementById("carnet").options[sel].value;
+        alert("L'adresse mail de " + nom + " est :"+email);
+    }
+}

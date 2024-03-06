@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cour_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="iframe_nav">
+      <a href="cour_dc1_js.html">javascript</a>
+    </div>
+   <xmp>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="controles.js"></script>
+    <link rel="stylesheet" href="stylebac.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" name="f1">
+        <fieldset>
+            <legend>ajout d'un habit</legend>
+            <label>Catégorie:</label> <select name="categorie" id="categorie">
+                <option value="">Selectionner une catégorie</option>
+                <option value="1">Robe de soirée</option>
+                <option value="2">Robe de mariée</option>
+                <option value="3">Caftan</option>
+                <option value="4">Costume</option>
+                <option value="5">Jebba</option>
+            </select><br>
+             <label>Description:</label><input type="text" name="description" id="description" class="tp2_inp1"><br>
+             <label>Taille:</label> <input type="radio" name="taille" id="S"> S <input type="radio" name="taille" id="M"> M <input type="radio" name="taille" id="L"> L <input type="radio" name="taille" id="XL"> XL <br>
+             <label>Prix Location:</label> <input type="number" name="prix" id="prix"> DT <br>
+             <input type="reset" value="Annuler" class="button"> <input type="button" value="Ajouter" onclick="verif1()" class="button">
+
+
+
+        </fieldset>
+    </form>
+    <form action="" method="post" name="f2">
+        <fieldset>
+            <legend>Location d'un habit</legend>
+           
+             <label>Code habit:</label><input type="text" name="code" id="code" class="tp2_inp1"><br>
+             <label>Cin client:</label> <input type="text" name="cin" id="cin" class="tp2_inp1">  <br>
+             <label>Durér location :</label> <input type="text" name="duree" id="duree" class="tp2_inp1">  <br>
+             <input type="reset" value="Annuler" class="button"> <input type="button" value="Louer" onclick="verif2()" class="button">
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
+   </xmp>
+  </body>
+</html>

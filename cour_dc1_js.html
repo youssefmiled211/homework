@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cour_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <xmp>
+        function verifdesc(ch)
+{
+    test=true;
+    ch=ch.toUpperCase();
+    if((ch.length<10)||(ch.length>100))
+    {
+        test=false;
+    }
+    else if(((ch.charAt(0)<"A")||(ch.charAt(0)>"Z"))||((ch.charAt((ch.length) -1)<"A")||(ch.charAt((ch.length) -1)>"Z")))
+        {
+            test=false;
+        }
+ return (test);
+}  
+function verif1()
+{
+    ch=document.getElementById("description").value;
+    prix=document.getElementById("prix").value;
+    i=document.getElementById("categorie").selectedIndex;
+    if(i==0)
+    {
+        alert("Veuillez choisir une catégorie");
+    }
+    else if(!verifdesc(ch))
+            {
+                alert("Vérifier la description ");
+            }
+            else if(!document.getElementById("S").checked &&!document.getElementById("M").checked && !document.getElementById("L").checked && !document.getElementById("XL").checked)
+                {
+                    alert("veuillez selectionner une taille");
+                }
+                else if(isNaN(prix)||(Number(prix)<100)||(Number(prix)>2000))
+                        {
+                            alert("Verifiez le Prix");
+                        }
+}
+function verif2()
+{
+   code=document.getElementById("code").value;
+   cin=document.getElementById("cin").value;
+   duree=document.getElementById("duree").value;
+    if((Number(code)<1)||(isNaN(code)))
+    {
+        alert("vérifier le code Habit");
+    }
+    else if(isNaN(cin)||(cin.length!=8)||((cin.charAt(0)!='0') && (cin.charAt(0)!='1') ) )
+        {
+            alert("Vérifier CIN ");
+        }else if((duree>'4')||(duree<'1'))
+            {
+                alert("Vérifier la durée");
+            }
+}
+    </xmp>
+</body>
+</html>

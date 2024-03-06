@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DS N°1 Lycee Tataouine</title>
+    <link rel="stylesheet" href="stylebac.css">
+    <script src="dss1.js"></script>
+</head>
+<body>
+    <form action="ds.php" name="f1" method="post">
+    <fieldset>
+    <center><h1>Identification</h1></center><br>
+   
+        <label>CIN :</label>
+        <input type="text" id="cin" name="cin" class="tp2_inp1">
+
+        <label>Nom :</label>
+        <input type="text" id="nom" name="nom" class="tp2_inp1">
+
+        <label>Prénom :</label>
+        <input type="text" id="prenom" name="prenom" class="tp2_inp1">
+        <hr>
+
+        <center><h2>TEST Web </h2></center>
+        <u><h3> Exercice 1 (4 points)</h3></u>
+        Quels est le language de programation qui permet de verifier les champs(obligatoire) d'une page Web ?
+        <select name="ex1" id="ex1">
+            <option value="0">Veuillez choisir une reponse</option>
+            <option value="0">HTML</option>
+            <option value="4">Javascript</option>
+            <option value="0">CSS</option>
+        </select>
+<br><br><br><br><br>
+        <u><h3>Exercice 2 (4 points)</h3></u>
+        Quel est l'objet qui permet de choisir un champs parmis plusieurs ?<br>
+        <input type="radio" id="Checkbo" name="ex2" value="4">
+        Checkbox<br>
+
+        <input type="radio" id="inpu" name="ex2" value="0">
+        Input<br>
+
+        <input type="radio" id="radi" name="ex2" value="0" >
+        Radio<br>
+
+        <u><h3>Exercice 3 (12 points : 4+4+4)</h3></u>
+        <p>Numerotez les etapes pour creer une page Web avec son code javascript:</p>
+        <input type="number" id="etape1" name="etape1">
+        Integrer le fichier fonction.js<br>
+
+        <input type="number" id="etape2" name="etape2" >
+        Ecrire le code de la fonction test()<br>
+
+        <input type="number" id="etape3" name="etape3" value="4" disabled>
+        Tester la page Web<br>
+
+        <input type="number" id="etape4" name="etape4" >
+        Creer l'evennement onclick<br>
+
+        <input type="number" id="etape5" name="etape5" value="0" disabled>
+        Creer la page html<br>
+
+        <input type="button" value="Envoyer" onclick="test()" class="button">
+    </fieldset>
+    </form>
+</body>
+</html>

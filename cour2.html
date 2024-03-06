@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cour_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="iframe_nav">
+      <a href="cour2_js.html">javascript</a>
+    </div>
+    <xmp>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <script src="javascript/tp2.js"></script>
+        <link rel="stylesheet" href="stylebac.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        </head>
+        <body>
+            <form action="" method="post" name="f1">
+                <label >Login:</label> <input type="text" name="login" id="login" class="tp2_inp1"> <br>
+                <label >Mot de passe:</label><input type="password" name="passwd" id="passwd" class="tp2_inp1"> <br>
+                <label >Nom:</label> <input type="text" name="nom" id="nom" class="tp2_inp1"> <br>
+                <label >Prénom: </label><input type="text" name="prenom" id="prenom" value="Oussama" class="tp2_inp1"> <br>
+                <label for="">Date de Naissance: </label><input type="date" name="date_naiss" id="date_naiss" class="tp2_inp1"> <br>
+                <label for="">Heure:</label> <input type="time" name="heure" id="heure" class="tp2_inp1"> <br>
+            <label for=""> Email:</label> <input type="email" name="mail" id="mail" placeholder="aaaa@bbbb.cc" class="tp2_inp1"> <br>
+                <fieldset>
+                    <legend><label for="">Sexe :</label></legend>
+                    <input type="radio" name="sexe" id="homme" checked  value="H">Homme
+                    <input type="radio" name="sexe" id="femme" value="F">Femme
+                </fieldset>
+                <br>
+                <label for="">Sports:</label>
+                <input type="checkbox" name="foot" id="foot" value="1">Football
+                <input type="checkbox" name="hand" id="hand" value="1">Handball
+                <input type="checkbox" name="tennis" id="tennis" value="1">Tennis
+        <br>
+        <select name="pays" id="pays">
+        <option>Veuillez choisir un pays SVP</option>
+        <option value="TN">Tunisie</option>
+        <option value="AL">Algérie</option>
+        <option value="LY">Lybie</option>
+        </select>
+        <br>
+        <label for="">Pays de résidence:</label>
+        <input list="pays1" name="pays1" class="tp2_inp1">
+        <datalist id="pays1">
+        <option value="Tunisie">
+        <option value="Algérie">
+        <option value="Lybie">
+        
+        </datalist><br>
+        <label for=""> Remarques:</label>
+        <br>
+        <textarea name="remarques" id="remarques" cols="30" rows="10" class="tp2_txt"></textarea>
+        <br>
+        <div class="wrapper">
+        <input type="button" class="button" value="mon bouton">
+        <input type="submit" class="button" value="Envoyer">
+        <input type="reset" class="button" value="Reinitialiser">
+        </div>
+        </form>
+        </body>
+        </html>
+            </xmp>
+  </body>
+</html>
